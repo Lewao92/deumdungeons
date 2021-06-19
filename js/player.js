@@ -44,8 +44,8 @@ let PlayerMoves = {
             return attackValues;
         }
         // Get player / enemy health to change later!
-        let getPlayerhälsa = document.querySelector(".hälsa-player");
-        let getEnemyhälsa = document.querySelector(".hälsa-enemy");
+        let getPlayerhälsa = document.querySelector(".player-hälsa");
+        let getEnemyhälsa = document.querySelector(".enemy-hälsa");
         // Initiate attacks!
         if (getPlayerUthållighet >= getEnemyUthållighet) {
             let playerAttackValues = playerAttack();
@@ -54,7 +54,7 @@ let PlayerMoves = {
             alert("Du slår " + playerAttackValues[0] + " damage " + playerAttackValues[1] + " times.");
             if (enemy.hälsa <= 0) {
                 alert("Du vann! Du slog i hjäl monstret! Uppdatera sidan för att spela igen.");
-                getPlayerHälsa.innerHTML = 'Hälsa:  ' + player.hälsa;
+                getPlayerHälsa.innerHTML = 'Hälsa: ' + player.hälsa;
                 getPlayerHälsa.innerHTML = 'Hälsa: 0';
             } else {
                 getEnemyHälsa.innerHTML = 'Hälsa:  ' + enemy.hälsa;
@@ -62,7 +62,7 @@ let PlayerMoves = {
                 let enemyAttackValues = enemyAttack();
                 let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
                 player.hälsa = player.hälsa - totalDamage;
-                alert("Monstret hit " + enemyAttackValues[0] + " damage " + enemyAttackValues[1] + " times.");
+                alert("Monstret slår " + enemyAttackValues[0] + " damage " + enemyAttackValues[1] + " times.");
                 if (player.hälsa <= 0) {
                     alert("Du förlorade och avlider... Uppdatera sidan  för att spela igen.");
                     getPlayerHälsa.innerHTML = 'Hälsa: 0';
@@ -71,9 +71,7 @@ let PlayerMoves = {
                     getPlayerHälsa.innerHTML = 'Hälsa:  ' + player.hälsa;
                 }
             }
-        }
-        // Enemy attacks
-        else if (getEnemyUthållighet >= getPlayerUthållighet) {
+        } else if (getEnemyUthållighet >= getPlayerUthållighet) {
             let enemyAttackValues = enemyAttack();
             let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
             player.hälsa = player.hälsa - totalDamage;
@@ -95,6 +93,7 @@ let PlayerMoves = {
                     getPlayerHälsa.innerHTML = 'Hälsa:  ' + enemy.hälsa;
                 } else {
                     getEnemyHälsa.innerHTML = 'Hälsa:  ' + enemy.hälsa;
+
                 }
             }
         }
