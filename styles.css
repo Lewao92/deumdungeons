@@ -124,7 +124,6 @@ body {
     background-color: #1d373d;
     background-image: url("img/arena-bg.png");
     background-position: center;
-    background-repeat: no-repeat;
     background-size: 35vh;
     visibility: hidden;
 }
