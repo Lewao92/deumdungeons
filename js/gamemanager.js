@@ -5,16 +5,16 @@ let GameManager = {
     },
     resetPlayer: function (classType) {
         switch (classType) {
-            case "Human":
+            case "Människa":
                 player = new Player(classType, 120, 100, 80, 100, 100);
                 break;
-            case "Orc":
+            case "Ork":
                 player = new Player(classType, 200, 0, 125, 100, 75);
                 break;
-            case "Dwarf":
+            case "Dvärg":
                 player = new Player(classType, 200, 5, 100, 100, 95);
                 break;
-            case "Giant":
+            case "Jätte":
                 player = new Player(classType, 220, 0, 200, 30, 50);
                 break;
         }
@@ -34,9 +34,9 @@ let GameManager = {
         let getActions = document.querySelector(".actions");
         let getEnemy = document.querySelector(".enemy");
         // Create enemy!
-        let enemy00 = new Enemy("Rat", 100, 10, 10, 10, 10);
-        let enemy01 = new Enemy("Wolf", 150, 25, 25, 25, 25);
-        let enemy02 = new Enemy("Skeleton", 175, 25, 50, 50, 50);
+        let enemy00 = new Enemy("Råtta", 100, 10, 10, 10, 10);
+        let enemy01 = new Enemy("Varg", 150, 25, 25, 25, 25);
+        let enemy02 = new Enemy("Skelett", 175, 25, 50, 50, 50);
         let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(3));
         switch (chooseRandomEnemy) {
             case 0:

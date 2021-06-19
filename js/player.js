@@ -55,7 +55,7 @@ let PlayerMoves = {
             if (enemy.hälsa <= 0) {
                 alert("Du vann! Du slog i hjäl monstret! Uppdatera sidan för att spela igen.");
                 getPlayerHälsa.innerHTML = 'Hälsa: ' + player.hälsa;
-                getPlayerHälsa.innerHTML = 'Hälsa: 0';
+                getEnemyHälsa.innerHTML = 'Hälsa: 0';
             } else {
                 getEnemyHälsa.innerHTML = 'Hälsa:  ' + enemy.hälsa;
                 // Enemy attacks
