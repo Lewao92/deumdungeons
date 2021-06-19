@@ -44,8 +44,8 @@ let PlayerMoves = {
             return attackValues;
         }
         // Get player / enemy health to change later!
-        let getPlayerhälsa = document.querySelector(".player-hälsa");
-        let getEnemyhälsa = document.querySelector(".enemy-hälsa");
+        let getPlayerHälsa = document.querySelector(".player-hälsa");
+        let getEnemyHälsa = document.querySelector(".enemy-hälsa");
         // Initiate attacks!
         if (getPlayerUthållighet >= getEnemyUthållighet) {
             let playerAttackValues = playerAttack();
