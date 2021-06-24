@@ -6,16 +6,22 @@ let GameManager = {
     resetPlayer: function (classType) {
         switch (classType) {
             case "Människa":
-                player = new Player(classType, 120, 100, 80, 100, 100);
+                player = new Player(classType, 120, 0, 80, 200, 100);
                 break;
             case "Ork":
                 player = new Player(classType, 200, 0, 125, 100, 75);
                 break;
             case "Dvärg":
-                player = new Player(classType, 200, 5, 100, 100, 95);
+                player = new Player(classType, 200, 0, 100, 100, 95);
                 break;
             case "Jätte":
                 player = new Player(classType, 220, 0, 200, 30, 50);
+                break;
+            case "Alv":
+                player = new Player(classType, 100, 200, 150, 100, 50);
+                break;
+            case "Goblin":
+                player = new Player(classType, 180, 0, 200, 30, 50);
                 break;
         }
         let getInterface = document.querySelector(".interface");
