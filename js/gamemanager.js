@@ -31,7 +31,7 @@ let GameManager = {
         let getHeader = document.querySelector(".header");
         let getActions = document.querySelector(".actions");
         let getArena = document.querySelector(".arena");
-        getHeader.innerHTML = '<p>Uppdrag: Sök efter en motståndare!</p>';
+        getHeader.innerHTML = '<h1>DEUM DUNGEONS</h1><p>Uppdrag: Sök efter en motståndare!</p>';
         getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="GameManager.setFight()">Sök efter en motståndare!</a>';
         getArena.style.visibility = 'visible';
     },
