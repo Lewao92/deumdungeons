@@ -6,10 +6,8 @@
     <meta name="description" content="Deum">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEUM DUNGEONS</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script script src="js/gamemanager.js"></script>
     <script script src="js/player.js"></script>
     <script script src="js/enemy.js"></script>
@@ -22,21 +20,21 @@
         <h5>Version: Alpha 0.007</h5>
         <h3>VÄLJ VILKEN RAS DU VILL SLÅSS MED</h3>
     </div>
-
-    <section class="navigation">
-        <nav>
-            <a href="index.html>"></a>
-            <div class="nav-links">
-                <ul>
-                    <li> <a href="#HEM">HEM</a></li>
-                    <li> <a href="#slumpduell">SLUMPDUELL</a></li>
-                    <li> <a href="#nyheter">NYHETER</a></li>
-                    <li> <a href="#uppdateringar">UPPDATERINGAR</a></li>
-                </ul>
+    <section class="topnav">
+        <a href="index.html">
+            <div class="my-links" id="myLinks">
+                <nav>
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li> <a href="#hem">HEM</a></li>
+                        <li> <a href="#slumpduell">SLUMPDUELL</a></li>
+                        <li> <a href="#nyheter">NYHETER</a></li>
+                        <li> <a href="#uppdateringar">UPPDATERINGAR</a></li>
+                    </ul>
             </div>
-        </nav>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
     </section>
-
     <div class="interface">
         <a href="#" onclick="GameManager.setGameStart('Människa')">
             <img src="img/avatar-player/Människa.png" alt="Människa">
@@ -50,39 +48,39 @@
         <a href="#" onclick="GameManager.setGameStart('Alv')">
             <img src="img/avatar-player/Alv.png" alt="Alv">
             <div>
+                <h3>Alv</h3>
+                <p>Alv "info" </p>
+            </div>
         </a>
-        <h3>Alv</h3>
-        <p>Alv "info" </p>
-    </div></a>
-    <a href="#" onclick="GameManager.setGameStart('Goblin')">
-        <img src="img/avatar-player/Goblin.png" alt="Goblin">
-        <div>
-            <h3>Goblin</h3>
-            <p>Goblin "info" </p>
-        </div>
-    </a>
-    <a href="#" onclick="GameManager.setGameStart('Dvärg')">
-        <img src="img/avatar-player/Dvärg.png" alt="Dvärg">
-        <div>
-            <h3>Dvärg</h3>
-            <p>Dvärg "info"</p>
-        </div>
-    </a>
-    <a href="#" onclick="GameManager.setGameStart('Ork')">
-        <img src="img/avatar-player/Ork.png" alt="Ork">
-        <div>
-            <h3>Ork</h3>
-            <p>Ork "info" </p>
-        </div>
-    </a>
+        <a href="#" onclick="GameManager.setGameStart('Goblin')">
+            <img src="img/avatar-player/Goblin.png" alt="Goblin">
+            <div>
+                <h3>Goblin</h3>
+                <p>Goblin "info" </p>
+            </div>
+        </a>
+        <a href="#" onclick="GameManager.setGameStart('Dvärg')">
+            <img src="img/avatar-player/Dvärg.png" alt="Dvärg">
+            <div>
+                <h3>Dvärg</h3>
+                <p>Dvärg "info"</p>
+            </div>
+        </a>
+        <a href="#" onclick="GameManager.setGameStart('Ork')">
+            <img src="img/avatar-player/Ork.png" alt="Ork">
+            <div>
+                <h3>Ork</h3>
+                <p>Ork "info" </p>
+            </div>
+        </a>
 
-    <a href="#" onclick="GameManager.setGameStart('Jätte')">
-        <img src="img/avatar-player/Jätte.png" alt="Jätte">
-        <div>
-            <h3>Jätte</h3>
-            <p>Jätte "info"</p>
-        </div>
-    </a>
+        <a href="#" onclick="GameManager.setGameStart('Jätte')">
+            <img src="img/avatar-player/Jätte.png" alt="Jätte">
+            <div>
+                <h3>Jätte</h3>
+                <p>Jätte "info"</p>
+            </div>
+        </a>
     </div>
 
 
@@ -98,6 +96,7 @@
     <div class="enemy">
 
     </div>
+    <script script src="js/main.js"></script>
 
 </body>
 </script>
